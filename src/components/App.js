@@ -15,6 +15,8 @@ class App extends React.Component {
     }
   }
 
+  changeType = (e) => {console.log(e)}
+
   render() {
     return (
       <div className="ui container">
@@ -24,7 +26,7 @@ class App extends React.Component {
         <div className="ui container">
           <div className="ui grid">
             <div className="four wide column">
-              <Filters />
+              <Filters onChange={this.changeType} />
             </div>
             <div className="twelve wide column">
               <PetBrowser />
