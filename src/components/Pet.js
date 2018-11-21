@@ -12,7 +12,7 @@ class Pet extends React.Component {
             {pet.name}
           </a>
           <div className="meta">
-            <span className="date">PET TYPE</span>
+            <span className="date">{pet.type}</span>
           </div>
           <div className="description">
             <p>Age:{pet.age}</p>
