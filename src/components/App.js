@@ -15,6 +15,11 @@ class App extends React.Component {
     }
   }
 
+  onAdoptPet = (id)  => {
+      this.state.pets.find((a) => a.id === id ).isAdopted = true
+      this.setState({})
+    }
+
   onChangeType = (e) => {
     // debugger;
     let el = e.target.value
@@ -45,7 +50,7 @@ onFindPetsClick = () => {
               <Filters onChangeType={this.onChangeType} onFindPetsClick={this.onFindPetsClick}/>
             </div>
             <div className="twelve wide column">
-              <PetBrowser pets={this.state.pets}  />
+              <PetBrowser pets={this.state.pets} onAdoptPet={this.onAdoptPet} />
             </div>
           </div>
         </div>
