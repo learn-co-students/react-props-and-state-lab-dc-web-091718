@@ -1,5 +1,10 @@
 # React Props and State Lab
 
+WHAT TO DO:
+- render correct pet information
+  - fetch pet information from our API
+  - attach fetch listener to 'find pets' button 
+
 ## Overview
 
 You'll build a small React application where you'll update state in response to a fetch payload and pass props among components to handle updates.
